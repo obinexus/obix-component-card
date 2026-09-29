@@ -1,0 +1,42 @@
+{
+  "package": "obix-component-card",
+  "dir": "core/obix-component-card",
+  "importedBy": "scripts/recovery/generate-shims.mjs",
+  "stage": "stage-7 compat shim (authored-in-recovery; no upstream code)",
+  "replaces": {
+    "name": "@obinexusltd/obix-component-card",
+    "source": "npm:@obinexusltd/obix-component-card@0.3.0",
+    "integrity": "sha512-tUP/czCR/jgiam52FXpdo95b7AQlMEsGJhmU24EtTBs/CcYEtS52xQD5ahcv8oeIuKVnXPxxBDKdUjarwn39uA=="
+  },
+  "owner": "obix-core-component",
+  "surface": "docs/recovery/shim-surface.json",
+  "decision": "compat-shim (docs/recovery/migration-table.md; obix-naming.json legacyShims, kind published)",
+  "entries": {
+    ".": {
+      "values": 2,
+      "types": 3,
+      "removed": [],
+      "missingTypes": [
+        "Action",
+        "DOPComponent"
+      ]
+    }
+  },
+  "localFixes": [],
+  "renamedFrom": [
+    {
+      "name": "@obinexusltd/obix-component-card",
+      "dir": "core/obix-component-card",
+      "stage": "unscoped-naming",
+      "why": "D-102 (2026-09-29): OBIX packages are named without an npm scope — previous name @obinexusltd/obix-component-card, current name obix-component-card (docs/recovery/unscoped-migration.md); the directory, version and exports are unchanged"
+    }
+  ],
+  "export": {
+    "from": "https://github.com/obinexusmk2/obix-monorepo",
+    "branch": "recovery/obix-api-preserving-rebuild",
+    "commit": "69cafc94910c1add865a520877617ac307668875",
+    "directory": "core/obix-component-card",
+    "exportedBy": "scripts/release/export-repos.mjs",
+    "note": "a clean initial commit of this package; the monorepo history is not imported (D-103). Local machine paths in this record are replaced by <local workspace>."
+  }
+}
